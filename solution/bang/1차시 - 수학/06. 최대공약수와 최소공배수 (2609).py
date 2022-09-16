@@ -8,15 +8,15 @@ LCM = a*b
 if a < b:
     a,b = b,a
 
-# 유클리드 호제법을 활용하여 최대 공약수를 구한다.
-c = a%b
-while(True):
-    if c == 0:
-        break
-    else:
-        c = a%b
-        a, b = b, c
-GCD = a
+# 유클리드 호제법 함수.
+def gcd(a,b) :
+    while b > 0 :
+        tmp = a%b
+        a = b
+        b = tmp
+    return a
+
+GCD = gcd(a, b)
 print(GCD)
 
 # 최대 공약수를 알면 최소 공배수는 쉽게 구할 수 있다.
