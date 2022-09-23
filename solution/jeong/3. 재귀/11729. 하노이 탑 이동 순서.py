@@ -1,5 +1,6 @@
 cnt = 0
 res = []
+
 def hanoi(n, A, C, B):
     global cnt
     

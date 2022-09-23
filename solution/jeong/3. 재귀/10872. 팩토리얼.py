@@ -7,3 +7,6 @@ def fact(n):
 
 n = int(input())
 print(fact(n))
+
+
+a = int(input("숫자를 입력해주세요 : "))
